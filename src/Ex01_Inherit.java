@@ -57,7 +57,6 @@ public class Ex01_Inherit {
 		
 		
 		
-		
 
 	}
 
