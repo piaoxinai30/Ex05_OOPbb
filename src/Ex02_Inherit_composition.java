@@ -1,56 +1,57 @@
 /*
-¼³°èµµ 1°³¸¸ ¸¸µå´Â °ÍÀº....
-¾÷¹«°¡ ´Ü¼øÇÏÁö ¾Ê±â ....
->>ÇÑ °³ ÀÌ»óÀÇ  ¼³°èµµ¸¦ »ı»ê ...
-** ±âÁØÁ¡ ** (¿©·¯°³ÀÇ ¼³°èµµ¸¦ [°ü°è]¸¦ ¸Î¾îÁÖ´Â °Í)
-»ó¼Ó°ü°è(is ~ a : »ó¼Ó) Àº ~ ÀÌ´Ù (ºÎ¸ğ¸¦ µÚ¿¡) 
+ì„¤ê³„ë„ 1ê°œë§Œ ë§Œë“œëŠ” ê²ƒì€....
+ì—…ë¬´ê°€ ë‹¨ìˆœí•˜ì§€ ì•Šê¸° ....
+>>í•œ ê°œ ì´ìƒì˜  ì„¤ê³„ë„ë¥¼ ìƒì‚° ...
+** ê¸°ì¤€ì  ** (ì—¬ëŸ¬ê°œì˜ ì„¤ê³„ë„ë¥¼ [ê´€ê³„]ë¥¼ ë§ºì–´ì£¼ëŠ” ê²ƒ)
+ìƒì†ê´€ê³„(is ~ a : ìƒì†) ì€ ~ ì´ë‹¤ (ë¶€ëª¨ë¥¼ ë’¤ì—) 
 
-Æ÷ÇÔ°ü°è(has ~ a :Æ÷ÇÔ) Àº ~ °¡Áö°í ÀÖ´Ù
+í¬í•¨ê´€ê³„(has ~ a :í¬í•¨) ì€ ~ ê°€ì§€ê³  ìˆë‹¤
 
-¿øÅ¬·¡½º , µµÇüÅ¬·¡½º 
->>¿ø extends µµÇü  (»ó¼Ó°ü°è)
+ì›í´ë˜ìŠ¤ , ë„í˜•í´ë˜ìŠ¤ 
+>>ì› extends ë„í˜•  (ìƒì†ê´€ê³„)
 
-¿øÅ¬·¡½º , Á¡Å¬·¡½º 
->>¿øÀº Á¡ÀÌ´Ù (x)
->>¿øÀº Á¡À» °¡Áö°í ÀÖ´Ù (has ~ a)(Æ÷ÇÔ°ü°è)
->>class ¿ø { Á¡ º¯¼ö¸í; } >>°´Ã¼¸¦ ¸â¹öÇÊµå 
+ì›í´ë˜ìŠ¤ , ì í´ë˜ìŠ¤ 
+>>ì›ì€ ì ì´ë‹¤ (x)
+>>ì›ì€ ì ì„ ê°€ì§€ê³  ìˆë‹¤ (has ~ a)(í¬í•¨ê´€ê³„)
+>>class ì› { ì  ë³€ìˆ˜ëª…; } >>ê°ì²´ë¥¼ ë©¤ë²„í•„ë“œ 
 
-°æÂû    ÃÑ
-°æÂûÀº ÃÑÀÌ´Ù (x)
-°æÂûÀº ±ÇÃÑÀ» °¡Áö°í ÀÖ´Ù(0) Æ÷ÇÔ°ü°è
-class °æÂû { ±ÇÃÑ º¯¼ö; }
+ê²½ì°°    ì´
+ê²½ì°°ì€ ì´ì´ë‹¤ (x)
+ê²½ì°°ì€ ê¶Œì´ì„ ê°€ì§€ê³  ìˆë‹¤(0) í¬í•¨ê´€ê³„
+class ê²½ì°° { ê¶Œì´ ë³€ìˆ˜; }
 ------------------------------------
- ¿¹¸¦ µé¸é
- ¿ø , »ï°¢Çü , »ç°¢ÇüÀ» ¸¸µå´Â ¼³°èµµ¸¦ ÀÛ¼º
+ ì˜ˆë¥¼ ë“¤ë©´
+ ì› , ì‚¼ê°í˜• , ì‚¬ê°í˜•ì„ ë§Œë“œëŠ” ì„¤ê³„ë„ë¥¼ ì‘ì„±
  
- ¿øÀºµµÇüÀÌ´Ù 
- »ï°¢ÇüÀº µµÇüÀÌ´Ù
- »ç°¢ÇüÀº µµÇüÀÌ´Ù
+ ì›ì€ë„í˜•ì´ë‹¤ 
+ ì‚¼ê°í˜•ì€ ë„í˜•ì´ë‹¤
+ ì‚¬ê°í˜•ì€ ë„í˜•ì´ë‹¤
  
- µµÇü : Ãß»óÈ­ , ÀÏ¹İÈ­ (»ö»ó , ±×¸®´Ù ) >> °øÅëÀÚ¿ø
- ¿ø : ±¸Ã¼È­ ,Æ¯¼öÈ­ -> ¹İÁö¸§ , Á¡   >> º»ÀÎ¸¸ÀÌ °¡Áö°í ÀÖ´Â °Í 
+ ë„í˜• : ì¶”ìƒí™” , ì¼ë°˜í™” (ìƒ‰ìƒ , ê·¸ë¦¬ë‹¤ ) >> ê³µí†µìì›
+ ì› : êµ¬ì²´í™” ,íŠ¹ìˆ˜í™” -> ë°˜ì§€ë¦„ , ì    >> ë³¸ì¸ë§Œì´ ê°€ì§€ê³  ìˆëŠ” ê²ƒ 
 
-Á¡ : ÁÂÇ¥°ª (x,y)
-¿øÀº Á¡À» °¡Áö°í ÀÖ´Ù
-»ï°¢ÇüÀº Á¡À» °¡Áö°í ÀÖ´Ù
-»ç°¢ÇüÀº Á¡À» °¡Áö°í ÀÖ´Ù
+ì  : ì¢Œí‘œê°’ (x,y)
+ì›ì€ ì ì„ ê°€ì§€ê³  ìˆë‹¤
+ì‚¼ê°í˜•ì€ ì ì„ ê°€ì§€ê³  ìˆë‹¤
+ì‚¬ê°í˜•ì€ ì ì„ ê°€ì§€ê³  ìˆë‹¤
 
- ÀÏ¹İÈ­(°øÅë , Ãß»ó) : shape(±×¸®´Ù , »ö»ó) ,  point(Á¡)
-class Shape{} // »ó¼Ó
-class Point{} // Æ÷ÇÔ
+ ì¼ë°˜í™”(ê³µí†µ , ì¶”ìƒ) : shape(ê·¸ë¦¬ë‹¤ , ìƒ‰ìƒ) ,  point(ì )
+class Shape{} // ìƒì†
+class Point{} // í¬í•¨
 
-±¸Ã¼È­ Æ¯¼öÈ­ : circle , triangle
+êµ¬ì²´í™” íŠ¹ìˆ˜í™” : circle , triangle
 */
 
-//Ãß»óÈ­,ÀÏ¹İÈ­ (°øÅë)
-class Shape{
-	  String color="gold"; //°øÅë¼Ó¼º
-	 
-	  void draw() { //°øÅë±â´É
-		  System.out.println("±×¸®´Ù");
-	 }
+//ì¶”ìƒí™”,ì¼ë°˜í™” (ê³µí†µ)
+class Shape {
+	String color="gold"; //ê³µí†µì†ì„±
+	//Could color be a static?
+	
+	void draw() { //ê³µí†µê¸°ëŠ¥
+		System.out.println("ê·¸ë¦¬ë‹¤");
+	}
 }
-//Ãß»óÈ­,ÀÏ¹İÈ­ (°øÅë)
+//ì¶”ìƒí™”,ì¼ë°˜í™” (ê³µí†µ)
 class Point{
 	int x;
 	int y;
@@ -64,23 +65,23 @@ class Point{
 		this.y = y;
 	}
 }
-//¿øÀ» ¸¸µå¼¼¿ä (Á¤ÀÇ : ¿øÁ¡°ú ¹İÁö¸§À» °¡Áö°í ÀÖ´Ù)
-//¿øÀº µµÇüÀÌ´Ù(is ~ a) : µµÇü (shape)  =»ó¼Ó°ü°è
-//¿øÀº Á¡À» °¡Áö°í ÀÖ´Ù(has ~ a) : Á¡(point) =Æ÷ÇÔ°ü°è
-//¿øÀÇ Æ¯¼ö¼º ¹İÁö¸§(r)
-//¿øÀÇ ¹İÁö¸§Àº default °ªÀ¸·Î 10À» °¡Áø´Ù,
-//Á¡ÀÇ  x,y ÁÂÇ¥´Â default ·Î (10,15)
-//±âº»°ªÀÇ ¼³Á¤À» ¿øÇÏÁö ¾ÊÀ¸¸é ¹İÁö¸§°ú Á¡ÀÇ °ªÀ» ÀÔ·ÂÇÒ ¼ö ÀÖ´Ù(¿øÀÌ ¸¸µé¾î Áú¶§)
-class Circle extends Shape{ //»ó¼Ó°ü°è
-	int r; //¹İÁö¸§
-	Point center; // Æ÷ÇÔ°ü°è(member field)
+//ì›ì„ ë§Œë“œì„¸ìš” (ì •ì˜ : ì›ì ê³¼ ë°˜ì§€ë¦„ì„ ê°€ì§€ê³  ìˆë‹¤)
+//ì›ì€ ë„í˜•ì´ë‹¤(is ~ a) : ë„í˜• (shape)  =ìƒì†ê´€ê³„
+//ì›ì€ ì ì„ ê°€ì§€ê³  ìˆë‹¤(has ~ a) : ì (point) =í¬í•¨ê´€ê³„
+//ì›ì˜ íŠ¹ìˆ˜ì„± ë°˜ì§€ë¦„(r)
+//ì›ì˜ ë°˜ì§€ë¦„ì€ default ê°’ìœ¼ë¡œ 10ì„ ê°€ì§„ë‹¤,
+//ì ì˜  x,y ì¢Œí‘œëŠ” default ë¡œ (10,15)
+//ê¸°ë³¸ê°’ì˜ ì„¤ì •ì„ ì›í•˜ì§€ ì•Šìœ¼ë©´ ë°˜ì§€ë¦„ê³¼ ì ì˜ ê°’ì„ ì…ë ¥í•  ìˆ˜ ìˆë‹¤(ì›ì´ ë§Œë“¤ì–´ ì§ˆë•Œ)
+class Circle extends Shape{ //ìƒì†ê´€ê³„
+	int r; //ë°˜ì§€ë¦„
+	Point center; // í¬í•¨ê´€ê³„(member field)
 	
 	Circle() {
 		//this.r = 10;
 		//this.center = new Point(10, 15);
-		this(10,new Point(10,15));
+		this(10, new Point(10,15));
 	}
-	Circle(int r , Point center){ //Point °´Ã¼ÀÇ ÁÖ¼Ò°ªÀ» ¹Ş°Ú´Ù
+	Circle(int r, Point center){ //Point ê°ì²´ì˜ ì£¼ì†Œê°’ì„ ë°›ê² ë‹¤
 		this.r = r;
 		this.center = center;
 	}
@@ -89,46 +90,48 @@ class Circle extends Shape{ //»ó¼Ó°ü°è
 	//Circle c2 = new Circle(4,new Point(5,6));
 
 
-//¹®Á¦ 1)
-//[»ï°¢Çü] Å¬·¡½º¸¦ ¸¸µå¼¼¿ä
-//»ï°¢ÇüÀº µµÇüÀÌ´Ù = »ó¼Ó°ü°è
-//»ï°¢ÇüÀº 3°³ÀÇ Á¡(°³º°¼Ó¼º) /»ö(°øÅë¼Ó¼º)/±×¸®´Ù(°øÅë±â´É)¶ó´Â ¼Ó¼ºÀ» °®´Â´Ù = Æ÷ÇÔ°ü°è ==>ÀÌ¹Ì À§ÀÇ Shape¶ó´Â class³»¿ë¿¡ ´ã°ÜÀÖÀ½
-//Á¤ÀÇ) »ï°¢ÇüÀº 3°³ÀÇ Á¡°ú »ö°ú ±×¸®°í ±×¸®´Ù¶ó´Â ±â´ÉÀ» °¡Áö°í ÀÖ´Ù
-//Shape, point Á¦°ø ¹Ş¾Æ¿ä
-//hint) (x,y)  (x,y)  (x,y) 3°³ÀÇ ÁÂÇ¥°ª 
-//default ·Î ±×¸± ¼ö ÀÖ°í , 3°³ÀÇ ÁÂÇ¥°ªÀ» ¹Ş¾Æ¼­ ±×¸± ¼ö ÀÖ´Ù
+//ë¬¸ì œ 1)
+//[ì‚¼ê°í˜•] í´ë˜ìŠ¤ë¥¼ ë§Œë“œì„¸ìš”
+//ì‚¼ê°í˜•ì€ ë„í˜•ì´ë‹¤ = ìƒì†ê´€ê³„
+//ì‚¼ê°í˜•ì€ 3ê°œì˜ ì (ê°œë³„ì†ì„±) /ìƒ‰(ê³µí†µì†ì„±)/ê·¸ë¦¬ë‹¤(ê³µí†µê¸°ëŠ¥)ë¼ëŠ” ì†ì„±ì„ ê°–ëŠ”ë‹¤ = í¬í•¨ê´€ê³„ ==>ì´ë¯¸ ìœ„ì˜ Shapeë¼ëŠ” classë‚´ìš©ì— ë‹´ê²¨ìˆìŒ
+//ì •ì˜) ì‚¼ê°í˜•ì€ 3ê°œì˜ ì ê³¼ ìƒ‰ê³¼ ê·¸ë¦¬ê³  ê·¸ë¦¬ë‹¤ë¼ëŠ” ê¸°ëŠ¥ì„ ê°€ì§€ê³  ìˆë‹¤
+//Shape, point ì œê³µ ë°›ì•„ìš”
+//hint) (x,y)  (x,y)  (x,y) 3ê°œì˜ ì¢Œí‘œê°’ 
+//default ë¡œ ê·¸ë¦´ ìˆ˜ ìˆê³  , 3ê°œì˜ ì¢Œí‘œê°’ì„ ë°›ì•„ì„œ ê·¸ë¦´ ìˆ˜ ìˆë‹¤
 class Triangle extends Shape {
 	Point x;
 	Point y;
 	Point z;
-	Triangle(){
-		//x = new Point(10,20); //ÁÖ¼Ò°ª
+	Triangle() {
+		//x = new Point(10,20); //ì£¼ì†Œê°’
 		//y = new Point(30,40);
 		//z = new Point(40,50);
-		this(new Point(10,20), new Point(30,40) , new Point(40, 50));
+		this(new Point(10, 20), new Point(30, 40), new Point(40, 50));
 	}
-	Triangle(Point x, Point y , Point z){
-		this.x = x; //ÁÖ¼Ò°ª
+	Triangle(Point x, Point y, Point z) {
+		this.x = x; //ì£¼ì†Œê°’
 		this.y = y;
 		this.z = z;
 	}
-	//Ãß°¡ÀûÀ¸·Î ±â´É
-	void trianglePoint() {
-		System.out.printf("x :(%d,%d)\t",x.x , x.y);
-		System.out.printf("y :(%d,%d)\t",y.x , y.y);
-		System.out.printf("z :(%d,%d)\t",z.x , z.y);
+	//ì¶”ê°€ì ìœ¼ë¡œ ê¸°ëŠ¥
+	void trianglePoint() { 
+		//naming of the functions should tell you what the function does. For example this function could be called 
+		//"printTrianglePoints"
+		System.out.printf("x :(%d,%d)\t", x.x, x.y); //use "this" pointer to make it more clear
+		System.out.printf("y :(%d,%d)\t", y.x, y.y);
+		System.out.printf("z :(%d,%d)\t", z.x, z.y);
 	}
 	
 }
 
-//³­ÀÌµµ Á¶Àı (»ó) Array ·Î Ã³¸®ÇÏ±â
+//ë‚œì´ë„ ì¡°ì ˆ (ìƒ) Array ë¡œ ì²˜ë¦¬í•˜ê¸°
 class Triangle2 extends Shape {
 	Point[] pointarray;
 	
 	Triangle2() {
 		//Car[] c = {new Car() , new Car() , new Car()}
-		//pointarray = new Point[3]; //¹æ¸¸ ...
-		                           //°¢°¢ÀÇ ¹æ¿¡ °´Ã¼ÀÇ ÁÖ¼Ò¸¦ ³Ö¾îÁØ´Ù (new ..)
+		//pointarray = new Point[3]; //ë°©ë§Œ ...
+		                           //ê°ê°ì˜ ë°©ì— ê°ì²´ì˜ ì£¼ì†Œë¥¼ ë„£ì–´ì¤€ë‹¤ (new ..)
 		//pointarray[0] = new Point(1,2);
 		//pointarray[1] = new Point(3,4);
 		//pointarray[2] = new Point(5,6);
@@ -136,24 +139,21 @@ class Triangle2 extends Shape {
 		//Car[] c;
 		//c = new Point[] {new .. , new .. ,new }
 		//[0] Point , [1] Point , [2] Point 
-		this(new Point[] {new Point(1,2),new Point(3,4), new Point(5,6)});
-
+		this(new Point[] {new Point(1, 2), new Point(3, 4), new Point(5, 6)});
 	}
-	Triangle2(Point[] pointarray){
+	Triangle2(Point[] pointarray) {
 		this.pointarray = pointarray;
 	}
 	
 	void trianglePoint() {
-		for(Point point : pointarray) {
-			System.out.println("ÁÂÇ¥: " + point.x  +","+ point.y);
+		//Also could be called "printTrianglePoints"
+		for(Point point: pointarray) { //Use "this" pointer
+			System.out.println("ì¢Œí‘œ: " + point.x +","+ point.y);
 		}
 	}
-	
 }
 
-
 public class Ex02_Inherit_composition {
-
 	public static void main(String[] args) {
 		/*
 		Circle circle = new Circle();
@@ -161,22 +161,24 @@ public class Ex02_Inherit_composition {
 		circle.center = new Point();
 		circle.draw();
 		*/
-		Circle c = new Circle(); //±âº»¿ø
+		Circle c = new Circle(); //ê¸°ë³¸ì›
 		c.draw();
+		
+		//You can also have a "get information" function to print the color, radius and the center point
 		System.out.println(c.color);
 		System.out.println(c.r);
-		System.out.println(c.center.x); //POINT ÁÖ¼Ò°ª.ÁÖ¼Ò°ª.°ª
+		System.out.println(c.center.x); //POINT ì£¼ì†Œê°’.ì£¼ì†Œê°’.ê°’
 		System.out.println(c.center.y);
 		
-		Circle c2 = new Circle(3, new Point(12, 24)); //ÁÂÇ¥°ª Á¤ÀÇ ÇÑ ¿ø
+		Circle c2 = new Circle(3, new Point(12, 24)); //ì¢Œí‘œê°’ ì •ì˜ í•œ ì›
 		
 		
-		
+	
 		/////////////////////////////////////////////////
-		Triangle  tri = new Triangle();
+		Triangle tri = new Triangle();
 		tri.trianglePoint();
 		System.out.println();
-		System.out.println("»ï°¢ÇüÀÇ »ö»ó:"+tri.color);
+		System.out.println("ì‚¼ê°í˜•ì˜ ìƒ‰ìƒ:" + tri.color);
 		tri.draw();
 		
 		Triangle2 tri2 = new Triangle2();
@@ -185,8 +187,4 @@ public class Ex02_Inherit_composition {
 		Triangle2 tri3 = new Triangle2(new Point[] {new Point(11,22),new Point(33,44), new Point(5,6)});
 		tri3.trianglePoint();
 	}
-
 }
-
-
-

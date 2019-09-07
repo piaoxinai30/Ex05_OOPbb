@@ -2,31 +2,32 @@ import kr.or.bit.Emp;
 
 class Test2{
 	void print() {
-		System.out.println("ºÎ¸ğÇÔ¼ö(Test2)");
+		System.out.println("ë¶€ëª¨í•¨ìˆ˜(Test2)");
 	}
 }
 
+//Indentation is very important!
 class Test3 extends Test2{
-
- @Override
- void print() {//¿À¹ö¶óÀÌµå
-	 System.out.println("ÀÚ½ÄÇÔ¼ö(Test3) °³¹ßÀÚ ¸¶À½´ë·Î");
- }
-//¿À¹ö·Îµù(»ó¼Ó°ú ÀüÇô »ó°ü ¾øÀ½)
- void print(String s) {
-	 System.out.println("³ª ¿À¹ö·Îµù ÇÔ¼ö¾ß!" + s);
-	 
- }
+	@Override
+	void print() {//ì˜¤ë²„ë¼ì´ë“œ
+		System.out.println("ìì‹í•¨ìˆ˜(Test3) ê°œë°œì ë§ˆìŒëŒ€ë¡œ");
+ 	}
+	
+	//ì˜¤ë²„ë¡œë”©(ìƒì†ê³¼ ì „í˜€ ìƒê´€ ì—†ìŒ)
+	void print(String s) {
+		System.out.println("ë‚˜ ì˜¤ë²„ë¡œë”© í•¨ìˆ˜ì•¼!" + s);
+	}
 }
+
 public class Ex05_Inherit_override {
 	public static void main(String[] args) {
 		Test3 t3 = new Test3();
 		t3.print();
-		t3.print("¿À¹ö·Îµù");
+		t3.print("ì˜¤ë²„ë¡œë”©");
 		
-		//Emp emp = new Emp(); //¿À¹ö·ÎµùµÈ »ı¼ºÀÚ°¡ ÇÏ³ª¶óµµ ÀÖ´Ù¸é, ¹İµå½Ã µğÆúÆ® »ı¼ºÀÚ¸¦ ±¸ÇöÇØ¾ßÇÔ
-		Emp emp = new Emp(7788, "È«±æµ¿");
+		//Emp emp = new Emp(); //ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ìê°€ í•˜ë‚˜ë¼ë„ ìˆë‹¤ë©´, ë°˜ë“œì‹œ ë””í´íŠ¸ ìƒì„±ìë¥¼ êµ¬í˜„í•´ì•¼í•¨
+		Emp emp = new Emp(7788, "í™ê¸¸ë™");
 		System.out.println(emp.toString());
-		System.out.println(emp); //emp.toString() °°Àº ÄÚµå
+		System.out.println(emp); //emp.toString() ê°™ì€ ì½”ë“œ
 	}
 }

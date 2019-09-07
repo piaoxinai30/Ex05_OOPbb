@@ -1,42 +1,44 @@
 
 /*
- OOP¾ğ¾îÀÇ 3´ë Æ¯Â¡
- 1. »ó¼Ó    2. Ä¸½¶È­(Àº´ĞÈ­)  3.´ÙÇâ¼º
+ OOPì–¸ì–´ì˜ 3ëŒ€ íŠ¹ì§•
+ 1. ìƒì†    2. ìº¡ìŠí™”(ì€ë‹‰í™”)  3.ë‹¤í–¥ì„±
  
-  »ó¼Ó, ºÎ¸ğÅ¸ÀÔÀÇ °´Ã¼¸¦ ¹°·Á¹Ş¾Æ¼­, ´ÙÁß»ó¼ÓÀÌ ¾ÈµÊ(º¹ÀâÇØ¼­)=>
- java¿¡¼­´Â »ó¼ÓÀ» child extends Base
- C#¿¡¼­´Â »ó¼ÓÀ»  child :Base
+  ìƒì†, ë¶€ëª¨íƒ€ì…ì˜ ê°ì²´ë¥¼ ë¬¼ë ¤ë°›ì•„ì„œ, ë‹¤ì¤‘ìƒì†ì´ ì•ˆë¨(ë³µì¡í•´ì„œ)=>
+ javaì—ì„œëŠ” ìƒì†ì„ child extends Base
+ C#ì—ì„œëŠ” ìƒì†ì„  child :Base
  
- »ó¼ÓÀÇ Æ¯Â¡:
- 1. ´ÙÁß»ó¼ÓÀº ºÒ°¡´ÉÇÏ´Ù
- 2. ´ÜÀÏ»ó¼Ó Áö¿ø(¿©·¯°³ÀÇ Å¬·¡½º¸¦ »ó¼Ó ¹ŞÀ¸·Á¸é:°èÃşÀû »ó¼Ó)
- 3. ´ÙÁß»ó¼ÓÀ» Áö¿øÇÏ´Â °Í : interface (only way)
+ ìƒì†ì˜ íŠ¹ì§•:
+ 1. ë‹¤ì¤‘ìƒì†ì€ ë¶ˆê°€ëŠ¥í•˜ë‹¤
+ 2. ë‹¨ì¼ìƒì† ì§€ì›(ì—¬ëŸ¬ê°œì˜ í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ìœ¼ë ¤ë©´:ê³„ì¸µì  ìƒì†)
+ 3. ë‹¤ì¤‘ìƒì†ì„ ì§€ì›í•˜ëŠ” ê²ƒ : interface (only way)
  
- 4. »ó¼ÓÀÇ ÀÇ¹Ì??? >> Àç»ç¿ë¼º!! >>>¼³°è½Ã ºñ¿ë(½Ã°£, °øÅëÀÚ¿ø(ºĞ¸ğ/Ãß»óÈ­))ÀÌ ³ôÀ½
-    ´ÜÁ¡Àº ÃÊ±âºñ¿ë(¼³°è)°¡ ¸¹ÀÌ µç´Ù.
- 5. »ó¼Ó °ü°è¿¡¼­ ¸Ş¸ğ¸®¿¡ ´ëÇÑ ¼ø¼­: GrandFather >> Father >> Child ¼øÀ¸·Î Èü¸Ş¸ğ¸®¿¡ ¿Ã¶ó°£´Ù
+ 4. ìƒì†ì˜ ì˜ë¯¸??? >> ì¬ì‚¬ìš©ì„±!! >>>ì„¤ê³„ì‹œ ë¹„ìš©(ì‹œê°„, ê³µí†µìì›(ë¶„ëª¨/ì¶”ìƒí™”))ì´ ë†’ìŒ
+    ë‹¨ì ì€ ì´ˆê¸°ë¹„ìš©(ì„¤ê³„)ê°€ ë§ì´ ë“ ë‹¤.
+ 5. ìƒì† ê´€ê³„ì—ì„œ ë©”ëª¨ë¦¬ì— ëŒ€í•œ ìˆœì„œ: GrandFather >> Father >> Child ìˆœìœ¼ë¡œ í™ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°„ë‹¤
  
- »ç¿ëÀÚ°¡ ¸¸µå´Â ¸ğµç Å¬·¡½º´Â µğÆúÆ®·Î Object¸¦ »ó¼ÓÇÑ´Ù
- class Child extends Object , Father (x) => ´ÙÁß ºÒ°¡´É
+ ì‚¬ìš©ìê°€ ë§Œë“œëŠ” ëª¨ë“  í´ë˜ìŠ¤ëŠ” ë””í´íŠ¸ë¡œ Objectë¥¼ ìƒì†í•œë‹¤
+ class Child extends Object , Father (x) => ë‹¤ì¤‘ ë¶ˆê°€ëŠ¥
  
   */
 
-class GrandFather extends Object { //ÃÖ»óÀ§ Å¬·¡½º¿¡´Â extend¤¤ Object°¡ ¼û°ÜÁ®ÀÖÀ½
+class GrandFather extends Object { //ìµœìƒìœ„ í´ë˜ìŠ¤ì—ëŠ” extendã„´ Objectê°€ ìˆ¨ê²¨ì ¸ìˆìŒ
 	public GrandFather() {
-		System.out.println("ÇÒ¾Æ¹öÁö »ı¼ºÀÚ");
+		System.out.println("í• ì•„ë²„ì§€ ìƒì„±ì");
 	}
 	public int gmoney = 5000;
-	private int pmoney = 10000; //private »ó¼Ó°ü°è¿¡¼­´Â Á¢±Ù ºÒ°¡
+	private int pmoney = 10000; //private ìƒì†ê´€ê³„ì—ì„œëŠ” ì ‘ê·¼ ë¶ˆê°€
 }
+
 class Father extends GrandFather{
 	public Father() {
-		System.out.println("¾Æ¹öÁö »ı¼ºÀÚ");
+		System.out.println("ì•„ë²„ì§€ ìƒì„±ì");
 	}
 	public int fmoney = 1000;
 }
+
 class Child extends Father{
 	public Child() {
-		System.out.println("ÀÚ½Ä »ı¼ºÀÚ");
+		System.out.println("ìì‹ ìƒì„±ì");
 	}
 	public int cmoney = 100;
 }
@@ -45,20 +47,10 @@ public class Ex01_Inherit {
 
 	public static void main(String[] args) {
 		Child child = new Child();
-		System.out.println(child.gmoney); //ÇÒ¾Æ¹öÁö µ· ³»µ·
-		System.out.println(child.fmoney); //¾Æ¹öÁö µ· ³»µ·
-		System.out.println(child.cmoney); //³»µ·µµ ³»µ·
+		System.out.println(child.gmoney); //í• ì•„ë²„ì§€ ëˆ ë‚´ëˆ
+		System.out.println(child.fmoney); //ì•„ë²„ì§€ ëˆ ë‚´ëˆ
+		System.out.println(child.cmoney); //ë‚´ëˆë„ ë‚´ëˆ
 		//System.out.println(child.pmoney);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }

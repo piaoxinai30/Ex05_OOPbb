@@ -1,72 +1,79 @@
-//µÎ°³ÀÇ ¼³°èµµ
+//ë‘ê°œì˜ ì„¤ê³„ë„
 class Tv{
 	boolean power; //default: false
+	//The default value could be set in a constructor
+	
 	int ch;
 	
 	void power() {
 		this.power = !this.power; //switch function
 	}
+	
 	void chUp() {
 		this.ch++;
 	}
+	
 	void chDown() {
 		this.ch--;
 	}
 }
-class Vcr{ //ºñµğ¿À ÇÃ·¹ÀÌ¾î
+class Vcr{ //ë¹„ë””ì˜¤ í”Œë ˆì´ì–´
 	boolean power;
 	
 	void power() {
-	this.power = !this.power;
+		this.power = !this.power;
 	}
+	
 	void play() {
 		System.out.println("play");
-			}
+	}
+	
 	void stop() {
 		System.out.println("stop");
 	}
-	void rew() {}
+	void rew() {} //???
 	void ff() {}
 }
-//Tv¼³°èµµ, Vcr¼³°èµµ¸¦ È°¿ëÇØ¼­
-//TvVcr¶ó´Â ¼³°èµµ¸¦ ¸¸µå¼¼¿ä
-//±âÁ¸¿¡ ÀÖ´Â Tv, Vcr Àç»ç¿ë(È°¿ë)ÇÏ°Ú´Ù
-//È°¿ë: »ó¼Ó, Æ÷ÇÔ
+//Tvì„¤ê³„ë„, Vcrì„¤ê³„ë„ë¥¼ í™œìš©í•´ì„œ
+//TvVcrë¼ëŠ” ì„¤ê³„ë„ë¥¼ ë§Œë“œì„¸ìš”
+//ê¸°ì¡´ì— ìˆëŠ” Tv, Vcr ì¬ì‚¬ìš©(í™œìš©)í•˜ê² ë‹¤
+//í™œìš©: ìƒì†, í¬í•¨
 
-//class TvVcr extends Tv, Vcr {}  ´ÙÁß»ó¼Ó ºÒ°¡´É
+//class TvVcr extends Tv, Vcr {}  ë‹¤ì¤‘ìƒì† ë¶ˆê°€ëŠ¥
 //class Tv extends Vcr
 //class TvVcr extends Tv
 
-//¼±ÅÃ: µÑÁß¿¡ ÇÏ³ª´Â »ó¼Ó, ³ª¸ÓÁö ÇÏ³ª´Â Æ÷ÇÔÀ¸·Î
-//TvVcr ÁÖ±â´É, ¸ŞÀÎ±â´É, º¸Á¶>> ºñÁßÀÌ ³ôÀº Å¬·¡½º¸¦ »ó¼ÓÇÔ
-//³ª¸ÓÁö´Â Æ÷ÇÔÀ¸·Î
+//ì„ íƒ: ë‘˜ì¤‘ì— í•˜ë‚˜ëŠ” ìƒì†, ë‚˜ë¨¸ì§€ í•˜ë‚˜ëŠ” í¬í•¨ìœ¼ë¡œ
+//TvVcr ì£¼ê¸°ëŠ¥, ë©”ì¸ê¸°ëŠ¥, ë³´ì¡°>> ë¹„ì¤‘ì´ ë†’ì€ í´ë˜ìŠ¤ë¥¼ ìƒì†í•¨
+//ë‚˜ë¨¸ì§€ëŠ” í¬í•¨ìœ¼ë¡œ
 
-//µÑ ´Ù Æ÷ÇÔ°ü°è
+//ë‘˜ ë‹¤ í¬í•¨ê´€ê³„
 //class TcVcr {Tv t; Vcr v;}
 
-class TvVcr extends Tv{
+class TvVcr extends Tv {
 	Vcr vcr;
 	TvVcr() {
 		vcr = new Vcr();
 	}
 }
+
 public class Ex03_Inherit_Single {
 	public static void main(String[] args) {
 		TvVcr t = new TvVcr();
 		t.power();
-		System.out.println("Tv Àü¿ø»óÅÂ:" + t.power);
+		System.out.println("Tv ì „ì›ìƒíƒœ:" + t.power);
 		t.chUp();
-		System.out.println("Tv Ã¤³ÎÁ¤º¸:" + t.ch);
+		System.out.println("Tv ì±„ë„ì •ë³´:" + t.ch);
 		
-		//ºñµğ¿À
+		//ë¹„ë””ì˜¤
 		t.vcr.power();
-		System.out.println("vcr Àü¿ø»óÅÂ:" + t.vcr.power);
+		System.out.println("vcr ì „ì›ìƒíƒœ:" + t.vcr.power);
 		t.vcr.play();
 		t.vcr.stop();
 		t.vcr.power();
 		t.power();
-		System.out.println("Tv Àü¿ø»óÅÂ:" + t.power);
-		System.out.println("vcr Àü¿ø»óÅÂ:" + t.vcr.power);
+		System.out.println("Tv ì „ì›ìƒíƒœ:" + t.power);
+		System.out.println("vcr ì „ì›ìƒíƒœ:" + t.vcr.power);
 	}
 
 }
